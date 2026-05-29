@@ -1,0 +1,543 @@
+!SESSION 2026-05-28 20:41:53.663 -----------------------------------------------
+eclipse.buildId=4.37.0.202511091838
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2026-05-28 20:42:16.477
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-05-28 20:42:36.855
+!MESSAGE Logback config file: G:\STS_ALL_Projects\Smart_IMS\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2026-05-28 20:42:38.527
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-28 20:42:38.528
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-05-28 20:42:39.394
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-28 20:42:39.394
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-05-28 20:43:07.706
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.php.debug.core 4 4 2026-05-28 20:43:10.032
+!MESSAGE The debug port 9000 is in use. Please select a different port for the debugger.
+
+!ENTRY org.eclipse.php.debug.core 4 4 2026-05-28 20:43:10.037
+!MESSAGE Could not open a broadcast port on: 20080 (port might be in use). Please select a different port number
+
+!ENTRY org.eclipse.php.debug.core 4 4 2026-05-28 20:43:10.043
+!MESSAGE The debug port 10137 is in use. Please select a different port for the debugger.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.727
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.913
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.916
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.919
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.920
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.922
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.923
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.925
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.926
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.929
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.952
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.954
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.962
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.963
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.964
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.966
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.968
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-28 20:43:13.969
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.eclipse.jface 2 0 2026-05-28 20:43:19.676
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-05-28 20:43:19.676
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-05-28 20:43:19.676
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.201
+!MESSAGE 20:44:12.137 [Simple-Language-Server main thread] INFO  o.s.i.v.b.a.BootVersionValidationConfig - Started Boot Version reconciler
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.252
+!MESSAGE 20:44:12.251 [Simple-Language-Server main thread] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - Adding classpath listener enabled=true
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.417
+!MESSAGE 20:44:12.411 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - update settings of spring indexer - start
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.438
+!MESSAGE 20:44:12.437 [Simple-Language-Server main thread] INFO  o.s.i.v.b.a.BootLanguageServerInitializer - Triggering reconcile on all open documents
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.448
+!MESSAGE 20:44:12.447 [Simple-Language-Server main thread] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - updating settings for remote processses to track - start
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:44:12.460
+!MESSAGE 20:44:12.458 [Simple-Language-Server main thread] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - updating settings for remote processses to track - start
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:30.428
+!MESSAGE 20:44:12.594 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - project created event: Linked_List
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:40.740
+!MESSAGE 20:45:30.437 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:40.746
+!MESSAGE 20:45:40.745 [pool-4-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:41.340
+!MESSAGE 20:45:41.336 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:42.270
+!MESSAGE 20:45:41.853 [pool-4-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:46.098
+!MESSAGE 20:45:46.076 [pool-2-thread-1] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [didSave event]: file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:46.173
+!MESSAGE 20:45:46.161 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file changed event: [file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:46.613
+!MESSAGE 20:45:46.608 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file created event: [file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/bin/problem/linkedlist/Source$Node.class]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:47.696
+!MESSAGE 20:45:46.617 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file changed event: [file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/bin/problem/linkedlist/Source.class]
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-05-28 20:45:48.695
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:49.647
+!MESSAGE 20:45:49.645 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:50.162
+!MESSAGE 20:45:50.161 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:50.215
+!MESSAGE 20:45:50.214 [pool-4-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:54.734
+!MESSAGE 20:45:54.732 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 5
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:55.277
+!MESSAGE 20:45:55.276 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:55.307
+!MESSAGE 20:45:55.306 [pool-4-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:56.104
+!MESSAGE 20:45:56.078 [pool-2-thread-2] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [didSave event]: file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:56.109
+!MESSAGE 20:45:56.108 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file changed event: [file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:56.523
+!MESSAGE 20:45:56.112 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [file changed]: file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:45:57.076
+!MESSAGE 20:45:57.075 [pool-2-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:48:36.526
+!MESSAGE 20:48:36.524 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file created event: [file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/SourceProblemStatment.txt]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:25.303
+!MESSAGE 20:48:37.103 [pool-2-thread-3] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Linked_List/src/problem/linkedlist/Source.java
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-28 20:55:25.406
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Linked_List does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:548)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2550)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2371)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2414)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-28 20:55:25.407
+!MESSAGE Linked_List does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-28 20:55:25.410
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Linked_List does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:548)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2550)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2371)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2414)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-28 20:55:25.410
+!MESSAGE Linked_List does not exist
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-05-28 20:55:26.062
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:147)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:398)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.lambda$0(AbstractReconciler.java:235)
+	at org.eclipse.core.runtime.jobs.Job$1.run(Job.java:166)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:26.155
+!MESSAGE 20:55:26.109 [pool-2-thread-7] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:26.655
+!MESSAGE 20:55:26.588 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:27.492
+!MESSAGE 20:55:26.679 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Creating name env for project 'Smart_IMS_DSA_Problem'
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:27.713
+!MESSAGE 20:55:27.712 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Parsed successfully CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:27.747
+!MESSAGE 20:55:27.716 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:55:28.180
+!MESSAGE 20:55:28.179 [pool-2-thread-8] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:17.168
+!MESSAGE 20:56:17.164 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:17.681
+!MESSAGE 20:56:17.680 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:17.689
+!MESSAGE 20:56:17.685 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:18.500
+!MESSAGE 20:56:18.156 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 3
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:18.820
+!MESSAGE 20:56:18.670 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:18.822
+!MESSAGE 20:56:18.820 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:21.119
+!MESSAGE 20:56:21.100 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - doc save event: file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:56:21.685
+!MESSAGE 20:56:21.356 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file changed event: [file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/bin/problem/GridPathRangeCheck/GridPathRangeCheck.class]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:02.646
+!MESSAGE 20:57:02.645 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file created event: [file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:02.816
+!MESSAGE 20:57:02.815 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file created event: [file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/bin/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.class]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.126
+!MESSAGE 20:57:03.125 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 1
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.128
+!MESSAGE 20:57:03.128 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.189
+!MESSAGE 20:57:03.188 [pool-2-thread-6] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.284
+!MESSAGE 20:57:03.283 [pool-2-thread-6] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.436
+!MESSAGE 20:57:03.331 [pool-2-thread-9] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.687
+!MESSAGE 20:57:03.644 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.688
+!MESSAGE 20:57:03.651 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Parsed successfully CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.689
+!MESSAGE 20:57:03.651 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.690
+!MESSAGE 20:57:03.652 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.690
+!MESSAGE 20:57:03.652 [Reconciler-1] INFO  o.s.i.v.b.j.r.JdtReconciler - reconciling (JDT): file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java done in 8ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:03.691
+!MESSAGE 20:57:03.652 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:04.012
+!MESSAGE 20:57:04.012 [pool-2-thread-10] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:16.878
+!MESSAGE 20:57:16.876 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 2
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:16.881
+!MESSAGE 20:57:16.877 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:16.884
+!MESSAGE 20:57:16.878 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change message work done in 2ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:16.941
+!MESSAGE 20:57:16.939 [pool-2-thread-9] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:17.386
+!MESSAGE 20:57:17.384 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:17.395
+!MESSAGE 20:57:17.393 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:17.946
+!MESSAGE 20:57:17.944 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 3
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:18.475
+!MESSAGE 20:57:18.447 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:26.187
+!MESSAGE 20:57:21.752 [pool-2-thread-9] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - hover computation done in 2ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:28.592
+!MESSAGE 20:57:28.588 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:29.164
+!MESSAGE 20:57:29.101 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:29.208
+!MESSAGE 20:57:29.207 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:29.631
+!MESSAGE 20:57:29.630 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:30.156
+!MESSAGE 20:57:30.148 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:30.220
+!MESSAGE 20:57:30.219 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Parsed successfully CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:30.222
+!MESSAGE 20:57:30.221 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: end work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:32.080
+!MESSAGE 20:57:31.681 [pool-2-thread-10] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - hover computation done in 2ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:32.277
+!MESSAGE 20:57:32.275 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 7
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:32.643
+!MESSAGE 20:57:32.640 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:32.935
+!MESSAGE 20:57:32.934 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 9
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:33.449
+!MESSAGE 20:57:33.280 [pool-2-thread-10] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:33.483
+!MESSAGE 20:57:33.482 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Finished parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:34.328
+!MESSAGE 20:57:34.327 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 10
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:34.962
+!MESSAGE 20:57:34.563 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 11
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:35.183
+!MESSAGE 20:57:35.044 [pool-2-thread-9] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:35.380
+!MESSAGE 20:57:35.378 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:35.928
+!MESSAGE 20:57:35.893 [pool-4-thread-2] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Started parsing CU for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:38.394
+!MESSAGE 20:57:38.394 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - doc save event: file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:38.429
+!MESSAGE 20:57:38.422 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [file changed]: file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:38.969
+!MESSAGE 20:57:38.590 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file deleted event: [file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/bin/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.class]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:56.375
+!MESSAGE 20:57:39.991 [pool-2-thread-10] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - hover computation done in 3ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:56.376
+!MESSAGE 20:57:56.376 [pool-13-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - Invalidate AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:56.379
+!MESSAGE 20:57:56.376 [pool-13-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change message work done in 2ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:56.891
+!MESSAGE 20:57:56.890 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:56.936
+!MESSAGE 20:57:56.930 [Reconciler-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: start work on AST for file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:58.820
+!MESSAGE 20:57:56.986 [pool-2-thread-9] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/linkedlist/Source.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:58.853
+!MESSAGE 20:57:58.853 [Simple-Language-Server main thread] INFO  o.s.i.v.boot.app.SpringSymbolIndex - Update document [file changed]: file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:57:59.030
+!MESSAGE 20:57:59.027 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleWorkspaceService - file created event: [file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/bin/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.class]
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 20:58:29.218
+!MESSAGE 20:57:59.564 [pool-2-thread-9] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/OtimizedGridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-05-28 21:00:29.170
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 21:04:14.618
+!MESSAGE 21:00:20.627 [pool-2-thread-12] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///G:/STS_ALL_Projects/Smart_IMS/Smart_IMS_DSA_Problem/src/problem/GridPathRangeCheck/GridPathRangeCheck.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-28 22:40:52.314
+!MESSAGE 22:39:10.498 [pool-12-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - exit: notification received
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:08.321
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:10.785
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:10.799
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.048
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.050
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.051
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.068
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.069
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.071
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.072
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.073
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.102
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.104
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.105
+!MESSAGE Could not send USER event 'Anonymous ID: 0358905e-773c-4698-8c1c-43d0fc392570': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.124
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-05-29 20:44:11.127
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.

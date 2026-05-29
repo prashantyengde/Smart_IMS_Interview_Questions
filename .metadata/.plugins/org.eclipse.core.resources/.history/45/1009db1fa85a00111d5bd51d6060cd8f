@@ -1,0 +1,69 @@
+package problem.linkedlist;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Source {
+    
+    static class Node {
+        int data;
+        Node next;
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        int n = in.nextInt();
+        
+        Node head = null, tail = null;
+        for (int i = 0; i < n; i++) {
+            int val = in.nextInt();
+            Node newNode = new Node(val);
+            if (head == null) {
+                head = tail = newNode;
+            } else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        
+        System.out.println(isPalindrome(head) ? "Yes" : "No");
+    }
+    
+    static boolean isPalindrome(Node head) {
+        if (head == null || head.next == null) return true;
+        
+        // Step 1: Find middle using slow/fast pointers
+        Node slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        
+        // Step 2: Reverse second half
+        Node prev = null, curr = slow;
+        while (curr != null) {
+            Node nextNode = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nextNode;
+        }
+        
+        // Step 3: Compare both halves
+        Node left = head, right = prev;
+        while (right != null) {
+            if (left.data != right.data) return false;
+            left = left.next;
+            right = right.next;
+        }
+        
+        return true;
+    }
+}

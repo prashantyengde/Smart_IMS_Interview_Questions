@@ -1,0 +1,137 @@
+/*
+Problem Statement:
+
+You are given a grid consisting of N rows and M columns.
+Each cell of the grid contains a non-negative integer cost.
+
+You can move only:
+- Right
+- Down
+
+from the top-left cell (0,0) to the bottom-right cell (N-1,M-1).
+
+Your task is to:
+1. Find the maximum possible path sum.
+2. Find the minimum possible path sum.
+
+You are also given a target value K.
+
+If K lies between the minimum path sum and maximum path sum
+(inclusive), print "Yes".
+Otherwise, print "No".
+
+--------------------------------------------------
+
+Input Format:
+- First line contains integer N (number of rows)
+- Second line contains integer M (number of columns)
+- Next N lines contain M space-separated integers
+  representing the grid
+- Last line contains integer K (target value)
+
+--------------------------------------------------
+
+Constraints:
+1 <= N, M <= 1000
+0 <= grid[i][j] <= 10^9
+
+--------------------------------------------------
+
+Sample Input:
+2
+2
+1 1
+3 4
+7
+
+Sample Output:
+Yes
+
+--------------------------------------------------
+
+Explanation:
+
+Possible Paths:
+
+Path 1:
+1 -> 3 -> 4
+Sum = 8 (Maximum)
+
+Path 2:
+1 -> 1 -> 4
+Sum = 6 (Minimum)
+
+Target = 7
+
+Since 7 lies between 6 and 8,
+output is "Yes".
+
+--------------------------------------------------
+*/
+
+import java.util.*;
+
+public class Source {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+
+        long[][] grid = new long[N][M];
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                grid[i][j] = sc.nextLong();
+            }
+        }
+
+        long target = sc.nextLong();
+
+        long[][] minDP = new long[N][M];
+        long[][] maxDP = new long[N][M];
+
+        // Initialize starting cell
+        minDP[0][0] = grid[0][0];
+        maxDP[0][0] = grid[0][0];
+
+        // Fill DP tables
+        for (int i = 0; i < N; i++) {
+
+            for (int j = 0; j < M; j++) {
+
+                if (i == 0 && j == 0)
+                    continue;
+
+                long minVal = Long.MAX_VALUE;
+                long maxVal = Long.MIN_VALUE;
+
+                // From top
+                if (i > 0) {
+                    minVal = Math.min(minVal, minDP[i - 1][j]);
+                    maxVal = Math.max(maxVal, maxDP[i - 1][j]);
+                }
+
+                // From left
+                if (j > 0) {
+                    minVal = Math.min(minVal, minDP[i][j - 1]);
+                    maxVal = Math.max(maxVal, maxDP[i][j - 1]);
+                }
+
+                minDP[i][j] = minVal + grid[i][j];
+                maxDP[i][j] = maxVal + grid[i][j];
+            }
+        }
+
+        long minSum = minDP[N - 1][M - 1];
+        long maxSum = maxDP[N - 1][M - 1];
+
+        if (target >= minSum && target <= maxSum) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}

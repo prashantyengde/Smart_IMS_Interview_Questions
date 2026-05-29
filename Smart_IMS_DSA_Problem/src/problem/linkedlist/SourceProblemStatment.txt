@@ -1,0 +1,107 @@
+Problem Statement:
+
+Given a singly linked list, check whether the linked list is a palindrome or not.
+
+A palindrome linked list is a list that reads the same forward and backward.
+
+Return:
+- "Yes" if the linked list is palindrome
+- "No" otherwise
+
+Input Format:
+- First line contains an integer N representing the number of nodes in the linked list.
+- Second line contains N space-separated integers representing the linked list elements.
+
+Output Format:
+- Print "Yes" if the linked list is palindrome.
+- Otherwise, print "No".
+
+Constraints:
+1 <= N <= 10^5
+1 <= Node Value <= 10^9
+
+Sample Input:
+5
+1 2 3 2 1
+
+Sample Output:
+Yes
+
+Explanation:
+The linked list 1 -> 2 -> 3 -> 2 -> 1 reads the same from both directions.
+Hence, it is a palindrome linked list.
+
+--------------------------------------------------
+Java Code:
+--------------------------------------------------
+*/
+
+import java.util.*;
+
+public class Source {
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
+    // Function to check palindrome
+    static boolean isPalindrome(Node head) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        Node temp = head;
+
+        // Store linked list values
+        while (temp != null) {
+            list.add(temp.data);
+            temp = temp.next;
+        }
+
+        int left = 0;
+        int right = list.size() - 1;
+
+        // Compare from both sides
+        while (left < right) {
+            if (!list.get(left).equals(list.get(right))) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        if (n == 0) {
+            System.out.println("No");
+            return;
+        }
+
+        // Create linked list
+        Node head = new Node(sc.nextInt());
+        Node temp = head;
+
+        for (int i = 1; i < n; i++) {
+            temp.next = new Node(sc.nextInt());
+            temp = temp.next;
+        }
+
+        // Check palindrome
+        if (isPalindrome(head)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
