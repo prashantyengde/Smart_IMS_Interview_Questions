@@ -18,5 +18,6 @@ public class OtimizedGridPathRangeCheck {
                 mn[i][j] = Math.min(mn[i-1][j], mn[i][j-1]) + g[i][j];
             }
         System.out.println(t >= mn[n-1][m-1] && t <= mx[n-1][m-1] ? "Yes" : "No");
+        in.close();
     }
 }

@@ -51,5 +51,6 @@ public class GridPathRangeCheck {
         long minSum = minDp[n - 1][m - 1];
 
         System.out.println((target >= minSum && target <= maxSum) ? "Yes" : "No");
+        in.close();
     }
 }

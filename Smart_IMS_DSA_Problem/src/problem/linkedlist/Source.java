@@ -33,6 +33,7 @@ public class Source {
         }
         
         System.out.println(isPalindrome(head) ? "Yes" : "No");
+        in.close();
     }
     
     static boolean isPalindrome(Node head) {
@@ -61,6 +62,7 @@ public class Source {
             left = left.next;
             right = right.next;
         }
+        
         
         return true;
     }
