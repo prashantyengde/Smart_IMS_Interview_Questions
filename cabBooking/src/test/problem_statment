@@ -1,78 +1,177 @@
-ZoomRide — Spring Boot Cab Booking System
-Problem Description
-In the bustling city of Metroville, ZoomRide, a popular ride-hailing platform, aims to offer seamless transportation experiences for its users. To enhance the platform's efficiency, the RideService layer must be implemented with three key functionalities: booking a ride, retrieving recent completed rides, and ending a ride.
+====================================================
+        ZOOMRIDE - SPRING BOOT CAB BOOKING SYSTEM
+              PROBLEM STATEMENT
+====================================================
 
-a. model package
-Contains the Driver, RideDetails and User entity classes with attributes, Constructors, getters and setters.
-
-Driver Entity (Driver.java)
-FieldTypeDescriptionidLongPrimary Key, auto-generatedavailabilityBooleanBIT(1) — true = available, false = not availablenameStringMax 255 chars, can be NULLratingDoubleMandatory, cannot be NULLvehicleDetailsStringMax 255 chars, can be NULL
-
-User Entity (User.java)
-FieldTypeDescriptionidLongPrimary Key, auto-generatedemailStringMax 255 chars, can be NULLnameStringMax 255 chars, can be NULLpaymentMethodStringMax 255 chars, can be NULLphoneStringMax 255 chars, can be NULL
-
-RideDetails Entity (RideDetails.java)
-FieldTypeDescriptionidLongPrimary Key, auto-generateddriverIdLongForeign Key referencing driver table, mandatoryendLocationStringMax 255 chars, mandatory, cannot be NULLendTimeLocalDateTimeCan be NULL if ride is ongoingfareDoubleMandatory, cannot be NULLrideStatusString"Ongoing" or "Completed", mandatorystartLocationStringMax 255 chars, mandatory, cannot be NULLstartTimeLocalDateTimeMandatory, cannot be NULLuserIdLongForeign Key referencing user table, mandatory
-
-b. repository package
-Contains the interface DriverRepository, RideDetailsRepository and UserRepository extending JpaRepository.
-
-RideDetailsRepository has two custom methods:
-
-findByUserId(Long userId)
-findByStartTimeAfter(LocalDateTime time)
+OVERVIEW
+--------
+In the bustling city of Metroville, ZoomRide, a popular ride-hailing
+platform, aims to offer seamless transportation experiences for its
+users. To enhance the platform's efficiency, the RideService layer
+must be implemented with three key functionalities:
+  - Booking a ride
+  - Retrieving recent completed rides
+  - Ending a ride
 
 
+====================================================
+PACKAGE STRUCTURE
+====================================================
+
+src/main/java/com/zoomride/
+├── model/
+│   ├── Driver.java
+│   ├── User.java
+│   └── RideDetails.java
+├── repository/
+│   ├── DriverRepository.java
+│   ├── UserRepository.java
+│   └── RideDetailsRepository.java
+├── service/
+│   └── RideService.java
+└── controller/
+    └── RideController.java
 
 
-c. service package
-Contains RideService class with the following method signatures performing business logic:
+====================================================
+a. MODEL PACKAGE
+====================================================
 
-Task 1: Book a Ride
-Complete the method with logic as per the requirement.
+----------------------------------------------------
+DRIVER ENTITY (Driver.java)
+----------------------------------------------------
+Field          | Type    | Description
+---------------|---------|---------------------------
+id             | Long    | Primary Key, auto-generated
+availability   | Boolean | BIT(1) - true = available, false = not available
+name           | String  | Max 255 chars, can be NULL
+rating         | Double  | Mandatory, cannot be NULL
+vehicleDetails | String  | Max 255 chars, can be NULL
 
-Function Name: bookRide(Long userId, String startLocation, String endLocation, double distance)
+----------------------------------------------------
+USER ENTITY (User.java)
+----------------------------------------------------
+Field         | Type   | Description
+--------------|--------|---------------------------
+id            | Long   | Primary Key, auto-generated
+email         | String | Max 255 chars, can be NULL
+name          | String | Max 255 chars, can be NULL
+paymentMethod | String | Max 255 chars, can be NULL
+phone         | String | Max 255 chars, can be NULL
+
+----------------------------------------------------
+RIDEDETAILS ENTITY (RideDetails.java)
+----------------------------------------------------
+Field         | Type          | Description
+--------------|---------------|---------------------------
+id            | Long          | Primary Key, auto-generated
+driverId      | Long          | Foreign Key -> driver table, mandatory
+endLocation   | String        | Max 255 chars, mandatory, cannot be NULL
+endTime       | LocalDateTime | Can be NULL if ride is ongoing
+fare          | Double        | Mandatory, cannot be NULL
+rideStatus    | String        | "Ongoing" or "Completed", mandatory
+startLocation | String        | Max 255 chars, mandatory, cannot be NULL
+startTime     | LocalDateTime | Mandatory, cannot be NULL
+userId        | Long          | Foreign Key -> user table, mandatory
+
+
+====================================================
+b. REPOSITORY PACKAGE
+====================================================
+
+Interfaces extending JpaRepository:
+  - DriverRepository.java
+  - UserRepository.java
+  - RideDetailsRepository.java
+
+RideDetailsRepository - Custom Methods:
+---------------------------------------
+1. findByUserId(Long userId)
+   - Returns rides for a specific user
+
+2. findByStartTimeAfter(LocalDateTime time)
+   - Returns rides that started after the given time
+
+
+====================================================
+c. SERVICE PACKAGE
+====================================================
+File: RideService.java
+
+CONSTANT:
+---------
+FARE_PER_KM = 25.0  (Rs. 25 per KM)
+
+----------------------------------------------------
+TASK 1: Book a Ride
+----------------------------------------------------
+Method     : bookRide(Long userId, String startLocation,
+                      String endLocation, double distance)
 Return Type: RideDetails
-Functionality:
 
-If no drivers are available, throw an exception indicating "No available drivers"
-Otherwise, calculate the fare based on the distance (Rs. 25 per KM)
-Return the ride details, including the first available driver and the fare calculated
+Logic:
+  - If no drivers are available
+    --> throw exception: "No available drivers"
+  - Otherwise:
+    --> Calculate fare = distance * 25.0 (Rs. 25 per KM)
+    --> Assign the first available driver
+    --> Save and return the RideDetails
 
+----------------------------------------------------
+TASK 2: Get Recent Completed Rides
+----------------------------------------------------
+Method     : getRecentCompletedRides(Long userId)
+Return Type: List<RideDetails>
 
+Logic:
+  - Retrieve completed rides for the user
+    within the last 30 minutes
+  - Return list of RideDetails matching the criteria
 
-
-Task 2: Get Recent Completed Rides
-Complete the method with logic as per the requirement.
-
-Function Name: getRecentCompletedRides(Long userId)
-Return Type: List
-Functionality:
-
-Retrieve completed rides for the user within the last 30 minutes
-Return a list of RideDetails that match the criteria
-
-
-
-
-Task 3: End a Ride
-Complete the method with logic as per the requirement.
-
-Function Name: endRide(Long rideId)
+----------------------------------------------------
+TASK 3: End a Ride
+----------------------------------------------------
+Method     : endRide(Long rideId)
 Return Type: RideDetails
-Functionality:
 
-End the specified ride by updating its status and setting the end time
-If the ride ID does not exist, throw an exception indicating "Ride not found"
+Logic:
+  - End the specified ride by:
+    --> Updating ride status to "Completed"
+    --> Setting the end time to current time
+  - If ride ID does not exist
+    --> throw exception: "Ride not found"
 
 
+====================================================
+d. CONTROLLER PACKAGE
+====================================================
+File: RideController.java
+Base Mapping: /api/rides
+
+API ENDPOINTS:
+--------------
+Method | Endpoint                  | Description
+-------|---------------------------|----------------------
+POST   | /api/rides/book           | Book a ride
+GET    | /api/rides/completed      | Get recent completed rides
+POST   | /api/rides/end/{rideId}   | End a ride
+GET    | /api/rides/users          | Get all users
+GET    | /api/rides/drivers        | Get all drivers
+GET    | /api/rides/ride-details   | Get all ride details
 
 
-d. controller package
-Contains RideController with skeleton CRUD API endpoints mapped to /api/rides:
-MethodEndpointDescriptionPOST/api/rides/bookBook a rideGET/api/rides/completedGet recent completed ridesPOST/api/rides/end/{rideId}End a rideGET/api/rides/usersGet all usersGET/api/rides/driversGet all driversGET/api/rides/ride-detailsGet all ride details
+====================================================
+IMPORTANT NOTES
+====================================================
+- The required endpoints are provided in RideController.java
+  so that you can check them easily.
+- FARE_PER_KM = 25.0 (Rs. 25 per KM) defined as a
+  constant in RideService.java
+- rideStatus values: "Ongoing" or "Completed" only
+- endTime can be NULL when ride is ongoing
+- driverId and userId are mandatory Foreign Keys
 
-NOTE
 
-The required endpoints are provided in the RideController.java file so that you can check them easily.
-FARE_PER_KM = 25.0 (Rs. 25 per KM, defined as a constant in RideService)
+====================================================
+END OF PROBLEM STATEMENT
+====================================================

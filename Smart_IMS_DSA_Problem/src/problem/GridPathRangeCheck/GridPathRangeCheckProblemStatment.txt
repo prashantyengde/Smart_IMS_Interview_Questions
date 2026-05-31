@@ -1,73 +1,76 @@
-/*
-Problem Statement:
+====================================================
+         GRID PATH SUM - PROBLEM STATEMENT
+====================================================
 
+OVERVIEW
+--------
 You are given a grid consisting of N rows and M columns.
 Each cell of the grid contains a non-negative integer cost.
 
 You can move only:
-- Right
-- Down
-
-from the top-left cell (0,0) to the bottom-right cell (N-1,M-1).
+  - Right
+  - Down
+from the top-left cell (0,0) to the bottom-right cell (N-1, M-1).
 
 Your task is to:
-1. Find the maximum possible path sum.
-2. Find the minimum possible path sum.
+  1. Find the maximum possible path sum.
+  2. Find the minimum possible path sum.
 
 You are also given a target value K.
 
-If K lies between the minimum path sum and maximum path sum
-(inclusive), print "Yes".
-Otherwise, print "No".
+  - If K lies between the minimum path sum and maximum path sum
+    (inclusive), print "Yes".
+  - Otherwise, print "No".
 
---------------------------------------------------
 
-Input Format:
-- First line contains integer N (number of rows)
-- Second line contains integer M (number of columns)
-- Next N lines contain M space-separated integers
-  representing the grid
-- Last line contains integer K (target value)
+====================================================
+INPUT FORMAT
+====================================================
+- First line  : integer N (number of rows)
+- Second line : integer M (number of columns)
+- Next N lines: M space-separated integers (grid values)
+- Last line   : integer K (target value)
 
---------------------------------------------------
 
-Constraints:
+====================================================
+CONSTRAINTS
+====================================================
 1 <= N, M <= 1000
 0 <= grid[i][j] <= 10^9
 
---------------------------------------------------
 
-Sample Input:
+====================================================
+SAMPLE INPUT
+====================================================
 2
 2
 1 1
 3 4
 7
 
-Sample Output:
+
+====================================================
+SAMPLE OUTPUT
+====================================================
 Yes
 
---------------------------------------------------
 
-Explanation:
-
+====================================================
+EXPLANATION
+====================================================
 Possible Paths:
 
-Path 1:
-1 -> 3 -> 4
-Sum = 8 (Maximum)
+Path 1: 1 -> 3 -> 4   Sum = 8  (Maximum)
+Path 2: 1 -> 1 -> 4   Sum = 6  (Minimum)
 
-Path 2:
-1 -> 1 -> 4
-Sum = 6 (Minimum)
+Target K = 7
 
-Target = 7
+Since 7 lies between 6 and 8, output is "Yes".
 
-Since 7 lies between 6 and 8,
-output is "Yes".
 
---------------------------------------------------
-*/
+====================================================
+SOLUTION - Source.java
+====================================================
 
 import java.util.*;
 
@@ -99,7 +102,6 @@ public class Source {
 
         // Fill DP tables
         for (int i = 0; i < N; i++) {
-
             for (int j = 0; j < M; j++) {
 
                 if (i == 0 && j == 0)
@@ -135,3 +137,34 @@ public class Source {
         }
     }
 }
+
+
+====================================================
+APPROACH EXPLANATION
+====================================================
+
+Technique : Dynamic Programming (DP)
+---------
+
+Two DP tables are maintained:
+  - minDP[i][j] : Minimum path sum to reach cell (i, j)
+  - maxDP[i][j] : Maximum path sum to reach cell (i, j)
+
+For each cell (i, j):
+  - Check value from top    : (i-1, j)
+  - Check value from left   : (i, j-1)
+  - Pick min/max accordingly and add current grid value
+
+Final Answer:
+  - minSum = minDP[N-1][M-1]
+  - maxSum = maxDP[N-1][M-1]
+  - If target >= minSum AND target <= maxSum --> "Yes"
+  - Otherwise --> "No"
+
+Time Complexity  : O(N * M)
+Space Complexity : O(N * M)
+
+
+====================================================
+END OF DOCUMENT
+====================================================

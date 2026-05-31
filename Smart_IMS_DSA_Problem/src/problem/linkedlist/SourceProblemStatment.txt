@@ -1,40 +1,71 @@
-Problem Statement:
+====================================================
+       PALINDROME LINKED LIST - PROBLEM STATEMENT
+====================================================
 
-Given a singly linked list, check whether the linked list is a palindrome or not.
+OVERVIEW
+--------
+Given a singly linked list, check whether the linked list
+is a palindrome or not.
 
-A palindrome linked list is a list that reads the same forward and backward.
+A palindrome linked list is a list that reads the same
+forward and backward.
 
 Return:
-- "Yes" if the linked list is palindrome
-- "No" otherwise
+  - "Yes" if the linked list is palindrome
+  - "No"  otherwise
 
-Input Format:
-- First line contains an integer N representing the number of nodes in the linked list.
-- Second line contains N space-separated integers representing the linked list elements.
 
-Output Format:
-- Print "Yes" if the linked list is palindrome.
-- Otherwise, print "No".
+====================================================
+INPUT FORMAT
+====================================================
+- First line  : integer N (number of nodes)
+- Second line : N space-separated integers
+                (linked list elements)
 
-Constraints:
-1 <= N <= 10^5
+
+====================================================
+OUTPUT FORMAT
+====================================================
+- Print "Yes" if the linked list is palindrome
+- Otherwise print "No"
+
+
+====================================================
+CONSTRAINTS
+====================================================
+1 <= N          <= 10^5
 1 <= Node Value <= 10^9
 
-Sample Input:
+
+====================================================
+SAMPLE INPUT
+====================================================
 5
 1 2 3 2 1
 
-Sample Output:
+
+====================================================
+SAMPLE OUTPUT
+====================================================
 Yes
 
-Explanation:
-The linked list 1 -> 2 -> 3 -> 2 -> 1 reads the same from both directions.
+
+====================================================
+EXPLANATION
+====================================================
+Linked list : 1 -> 2 -> 3 -> 2 -> 1
+
+Reads same from both directions.
 Hence, it is a palindrome linked list.
 
---------------------------------------------------
-Java Code:
---------------------------------------------------
-*/
+Forward  : 1 2 3 2 1
+Backward : 1 2 3 2 1
+Result   : Yes
+
+
+====================================================
+SOLUTION - Source.java
+====================================================
 
 import java.util.*;
 
@@ -62,7 +93,7 @@ public class Source {
             temp = temp.next;
         }
 
-        int left = 0;
+        int left  = 0;
         int right = list.size() - 1;
 
         // Compare from both sides
@@ -105,3 +136,73 @@ public class Source {
         }
     }
 }
+
+
+====================================================
+APPROACH EXPLANATION
+====================================================
+
+Technique : ArrayList + Two Pointer
+----------
+
+Step 1: Traverse the linked list and store all
+        node values in an ArrayList.
+
+Step 2: Use two pointers:
+          - left  starting from index 0
+          - right starting from last index
+
+Step 3: Compare values at left and right:
+          - If mismatch found --> return false
+          - Move left++ and right--
+          - Repeat until left >= right
+
+Step 4: If all values match --> return true
+
+----------------------------------------------------
+EXAMPLE WALKTHROUGH
+----------------------------------------------------
+List     : 1 -> 2 -> 3 -> 2 -> 1
+ArrayList: [1, 2, 3, 2, 1]
+
+Step     | left | right | list[left] | list[right] | Match?
+---------|------|-------|------------|-------------|-------
+  1      |  0   |   4   |     1      |      1      |  Yes
+  2      |  1   |   3   |     2      |      2      |  Yes
+  3      |  2   |   2   |   left >= right -> Stop  |
+
+Result: Palindrome -> "Yes"
+
+----------------------------------------------------
+Time Complexity  : O(N)
+Space Complexity : O(N)  -- ArrayList storage
+
+
+====================================================
+TEST CASES
+====================================================
+
+Test 1:
+  Input : 5 | 1 2 3 2 1
+  Output: Yes
+
+Test 2:
+  Input : 4 | 1 2 3 4
+  Output: No
+
+Test 3:
+  Input : 1 | 5
+  Output: Yes  (single node is always palindrome)
+
+Test 4:
+  Input : 2 | 1 1
+  Output: Yes
+
+Test 5:
+  Input : 4 | 1 2 2 1
+  Output: Yes
+
+
+====================================================
+END OF DOCUMENT
+====================================================

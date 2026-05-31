@@ -1,0 +1,188 @@
+====================================================
+       FLIGHT MANAGEMENT SYSTEM - PROBLEM STATEMENT
+====================================================
+
+OVERVIEW
+--------
+Implement a Flight Management System in Java using JPA and MySQL.
+The system should allow adding, viewing, searching, and updating
+flights while maintaining proper separation between layers,
+performing business validations, and handling errors consistently.
+
+
+PROJECT SETUP
+-------------
+Build Tool   : Maven
+Language     : Java 21
+Framework    : Spring Boot 4.0.6
+Database     : MySQL
+Dependencies : Spring Data JPA, MySQL Driver
+Packaging    : Jar
+
+
+PROJECT STRUCTURE
+-----------------
+src/main/java/com/flight/
+├── entities/
+│   └── Flight.java
+├── dao/
+│   └── FlightDAO.java
+├── service/
+│   └── FlightService.java
+└── FlightApp.java
+
+src/main/resources/
+├── META-INF/
+│   └── persistence.xml
+└── application.properties
+
+
+====================================================
+LAYER 1 - ENTITY LAYER
+====================================================
+File: src/main/java/com/flight/entities/Flight.java
+
+FIELDS:
+-------
+id               - int           - Primary Key, Auto Increment
+flightNumber     - String        - Unique, Not Null
+departureAirport - String        - Not Null
+arrivalAirport   - String        - Not Null
+departureTime    - LocalDateTime - Not Null
+arrivalTime      - LocalDateTime - Not Null
+price            - double        - Not Null
+availableSeats   - int           - Not Null
+
+REQUIREMENTS:
+-------------
+- Implement getters and setters for every field
+- Implement a toString() method
+- Catch database errors and throw IllegalStateException
+
+
+====================================================
+LAYER 2 - DAO LAYER
+====================================================
+File: src/main/java/com/flight/dao/FlightDAO.java
+
+METHODS:
+--------
+1. addFlight(Flight flight)
+   Return Type : int
+   Description : Adds a new flight, returns generated id
+
+2. getAllFlights()
+   Return Type : List<Flight>
+   Description : Returns all flights from database
+
+3. findByFlightNumber(String flightNumber)
+   Return Type : Flight
+   Description : Finds a flight by its flight number
+
+4. updateFlightPrice(String flightNumber, double newPrice)
+   Return Type : void
+   Description : Updates the price of a flight
+
+RULES:
+------
+- Do NOT include business validations in this layer
+- Return null if query returns no results
+
+
+====================================================
+LAYER 3 - SERVICE LAYER
+====================================================
+File: src/main/java/com/flight/service/FlightService.java
+
+METHODS:
+--------
+1. addFlight(Flight flight)
+   Return Type : int
+   Description : Validates then adds flight
+
+2. getAllFlights()
+   Return Type : List<Flight>
+   Description : Returns all flights
+
+3. findByFlightNumber(String flightNumber)
+   Return Type : Flight
+   Description : Validates then finds flight
+
+4. updateFlightPrice(String flightNumber, double newPrice)
+   Return Type : void
+   Description : Validates then updates price
+
+VALIDATION MESSAGES (throw IllegalArgumentException):
+------------------------------------------------------
+"Flight number is required"
+"Departure airport is required"
+"Arrival airport is required"
+"Departure time is required"
+"Arrival time is required"
+"Arrival time must be after departure time"
+"Price must be non-negative"
+"Available seats must be non-negative"
+
+
+====================================================
+LAYER 4 - MAIN APPLICATION
+====================================================
+File: src/main/java/com/flight/FlightApp.java
+
+MENU OPTIONS:
+-------------
+1. Add Flight
+2. View All Flights
+3. Find Flight by Flight Number
+4. Update Flight Price
+5. Exit
+
+INPUT FORMAT:
+-------------
+Date/Time format : yyyy-MM-dd HH:mm
+
+ERROR HANDLING:
+---------------
+- Catch IllegalArgumentException  --> print "Error: " + message
+- Catch IllegalStateException     --> print "Error: " + message
+- Catch NumberFormatException     --> print "Invalid input. Please enter a number."
+
+
+====================================================
+TESTING REQUIREMENTS
+====================================================
+- Automated tests validate both positive and negative scenarios
+- Tests check correct validations, exception handling,
+  and proper method behavior
+- Exact error messages are mandatory for passing tests
+- DAO must return null when no records are found
+- Matching the specified output and exceptions is mandatory
+
+
+====================================================
+DATABASE CONFIGURATION
+====================================================
+spring.datasource.url=jdbc:mysql://localhost:3306/flightdb
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+SAMPLE DATA:
+------------
+INSERT INTO flights (flightNumber, departureAirport, arrivalAirport,
+                     departureTime, arrivalTime, price, availableSeats)
+VALUES
+('AI101', 'Delhi',     'Mumbai',    '2025-06-01 06:00:00', '2025-06-01 08:00:00', 3500.00, 120),
+('AI102', 'Mumbai',    'Bangalore', '2025-06-01 09:00:00', '2025-06-01 11:00:00', 2800.00, 95),
+('AI103', 'Bangalore', 'Chennai',   '2025-06-02 07:30:00', '2025-06-02 08:30:00', 1500.00, 80),
+('AI104', 'Chennai',   'Hyderabad', '2025-06-02 10:00:00', '2025-06-02 11:30:00', 1800.00, 110),
+('AI105', 'Hyderabad', 'Pune',      '2025-06-03 14:00:00', '2025-06-03 15:30:00', 2000.00, 75),
+('AI106', 'Pune',      'Delhi',     '2025-06-03 16:00:00', '2025-06-03 18:30:00', 3200.00, 130),
+('AI107', 'Delhi',     'Kolkata',   '2025-06-04 08:00:00', '2025-06-04 10:30:00', 4000.00, 60),
+('AI108', 'Kolkata',   'Mumbai',    '2025-06-04 12:00:00', '2025-06-04 14:30:00', 3800.00, 90);
+
+
+====================================================
+END OF PROBLEM STATEMENT
+====================================================
